@@ -13,11 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 15px;
-}
-
-img {
-  border-radius: 8%;
 }
 
 h1 {
@@ -42,11 +37,13 @@ p {
   }
   .qr-background {
     width: 85%;
+    border-radius: 15px;
   }
 
   img {
     max-width: 90%;
     padding: 5%;
+    border-radius: 8%;
   }
 
   h1 {
