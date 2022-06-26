@@ -15,6 +15,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  border-radius: 15px;
 }
 
 h1 {
@@ -23,6 +25,8 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   color: hsl(218, 44%, 22%);
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 p {
@@ -30,6 +34,15 @@ p {
   font-family: Outfit, Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: hsl(220, 15%, 55%);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+img {
+  max-width: 90%;
+  padding: 5%;
+  border-radius: 8%;
 }
 
 /* mobile screens media query */
@@ -40,24 +53,6 @@ p {
 
   .qr-background {
     width: 85%;
-    border-radius: 15px;
-  }
-
-  img {
-    max-width: 90%;
-    padding: 5%;
-    border-radius: 8%;
-  }
-
-  h1 {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-  p {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
   }
 }
 
@@ -67,23 +62,16 @@ p {
     max-width: 1440px;
   }
   .qr-background {
-    width: 22%;
-    border-radius: 15px;
+    max-width: 320px;
   }
+}
 
-  img {
-    max-width: 90%;
-    padding: 5%;
-    border-radius: 8%;
+/* large desktop screens media query */
+@media only screen and (min-width: 1440px) {
+  body {
+    min-width: 1440px;
   }
-
-  h1 {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  p {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+  .qr-background {
+    max-width: 320px;
   }
 }
