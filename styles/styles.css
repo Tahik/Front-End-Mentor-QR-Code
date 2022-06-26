@@ -1,6 +1,7 @@
 html {
   height: 100%;
 }
+
 body {
   background-color: hsl(212, 45%, 89%);
   display: flex;
@@ -8,6 +9,7 @@ body {
   align-items: center;
   height: 100%;
 }
+
 .qr-background {
   background-color: white;
   display: flex;
@@ -17,7 +19,7 @@ body {
 
 h1 {
   text-align: center;
-  font-family: Outfit;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: hsl(218, 44%, 22%);
@@ -25,7 +27,7 @@ h1 {
 
 p {
   text-align: center;
-  font-family: Outfit;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: hsl(220, 15%, 55%);
 }
@@ -35,8 +37,37 @@ p {
   body {
     max-width: 375px;
   }
+
   .qr-background {
     width: 85%;
+    border-radius: 15px;
+  }
+
+  img {
+    max-width: 90%;
+    padding: 5%;
+    border-radius: 8%;
+  }
+
+  h1 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  p {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+/* desktop screens media query */
+@media only screen and (min-width: 376px) and (max-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+  .qr-background {
+    width: 22%;
     border-radius: 15px;
   }
 
