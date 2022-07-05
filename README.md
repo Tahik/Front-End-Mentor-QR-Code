@@ -28,8 +28,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 HTML5 and CSS
 
-### Useful resources
-
 ## Author
 
 - Website - https://tomrihak.netlify.app
